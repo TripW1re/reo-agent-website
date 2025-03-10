@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { getServiceBySlug, getLocationBySlug, getServices, getLocations } from '../../../../lib/data';
 import { notFound } from 'next/navigation';
-import { Service } from '../../../../lib/types';
 
 // Generate static params for all service+location combinations
 export async function generateStaticParams() {
@@ -105,7 +104,7 @@ export default async function ServiceLocationPage({ params }: { params: { slug: 
                       This helps us develop a customized approach tailored to your specific needs and the {location.name} real estate market.
                     </p>
                     <p className="text-gray-700 mt-4">
-                      After evaluating your property and situation, we'll develop a personalized solution that addresses 
+                      After evaluating your property and situation, we will develop a personalized solution that addresses 
                       your specific challenges. We handle all aspects of implementing the solution, from marketing your 
                       property to negotiating with buyers, lenders, or other parties involved in the transaction.
                     </p>
@@ -303,7 +302,7 @@ export default async function ServiceLocationPage({ params }: { params: { slug: 
           <h2 className="text-3xl font-bold mb-6">Need {service.title} Help in {location.name}?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Contact us today for a confidential consultation about your property situation.
-            We're here to help you find the best solution for your unique needs.
+            We are here to help you find the best solution for your unique needs.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
