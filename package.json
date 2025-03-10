@@ -1,0 +1,39 @@
+{
+  "name": "reo-agent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "ts-node-esm --project scripts/tsconfig.json scripts/seed.ts",
+    "seed:build": "tsc -p scripts/tsconfig.json && node dist/seed.js",
+    "seed:js": "node --experimental-modules scripts/seed.js",
+    "seed:simple": "node scripts/simple-seed.js",
+    "seed:rest": "node scripts/rest-seed.js",
+    "check:tables": "node scripts/check-tables.js",
+    "create:tables": "node scripts/create-tables.js",
+    "seed:data": "node scripts/seed-data.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "@types/uuid": "^10.0.0",
+    "dotenv": "^16.4.7",
+    "next": "14.2.23",
+    "react": "^18",
+    "react-dom": "^18",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.23",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}
