@@ -6,8 +6,8 @@ export default function CtaSection() {
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-6">Need Help With Your Property?</h2>
         <p className="text-xl mb-8 max-w-3xl mx-auto">
-          Whether you're facing foreclosure, going through a divorce, or dealing with an inherited property,
-          we're here to help you find the best solution for your unique situation.
+          Whether you are facing foreclosure, going through a divorce, or dealing with an inherited property,
+          we are here to help you find the best solution for your unique situation.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
