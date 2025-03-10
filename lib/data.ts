@@ -1,11 +1,6 @@
 import {
   Service,
-  ContentBlock,
   Location,
-  LocalFeature,
-  BlogPost,
-  BlogCategory,
-  BlogTag,
   ServiceWithLocation
 } from './types';
 
@@ -90,7 +85,7 @@ export async function getLocationBySlug(slug: string): Promise<Location | null> 
   }
 }
 
-export async function getBlogPosts(): Promise<BlogPost[]> {
+export async function getBlogPosts() {
   try {
     // Simulate a delay to mimic a real API call
     await new Promise(resolve => setTimeout(resolve, 100));
@@ -109,7 +104,7 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
   }
 }
 
-export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
+export async function getBlogPostBySlug(slug: string) {
   try {
     // Simulate a delay to mimic a real API call
     await new Promise(resolve => setTimeout(resolve, 100));
