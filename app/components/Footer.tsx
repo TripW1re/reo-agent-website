@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">eXp Realty</h3>
+            <h3 className="text-xl font-bold mb-4">TurboHomes</h3>
             <p className="text-gray-300 mb-4">
               Specialized real estate services for distressed homeowners in Sacramento County and surrounding areas.
             </p>
@@ -58,7 +58,8 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <p className="text-gray-300 mb-2">📞 Phone: 916-690-3334</p>
             <p className="text-gray-300 mb-2">📧 Email: ravneel_pratap@live.com</p>
-            <p className="text-gray-300 mb-4">🏢 Office: 2603 Camino Ramon, Suite 200, San Ramon, CA 94583</p>
+            <p className="text-gray-300 mb-2">🏢 Office: 2603 Camino Ramon, Suite 200, San Ramon, CA 94583</p>
+            <p className="text-gray-300 mb-4">REALTOR®| DRE: 02156944| eXp Realty of California Inc</p>
             <Link 
               href="https://form.jotform.com/250516766708161" 
               target="_blank"
@@ -70,7 +71,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} eXp Realty. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} TurboHomes. All rights reserved.</p>
           <p className="mt-2 text-sm">
             <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link> | 
             <Link href="/terms-of-service" className="hover:text-white ml-2">Terms of Service</Link>
