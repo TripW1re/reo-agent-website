@@ -38,10 +38,10 @@ export default async function BlogPage() {
                         <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
                           {post.category?.name || 'Real Estate'}
                         </span>
-                        <span className="text-gray-500 text-sm ml-2">{post.date}</span>
+                        <span className="text-gray-700 text-sm ml-2">{post.date}</span>
                       </div>
-                      <h2 className="text-xl font-bold mb-2 text-gray-900">{post.title}</h2>
-                      <p className="text-gray-600 mb-4">{post.excerpt}</p>
+                      <h2 className="text-xl font-bold mb-2 text-black">{post.title}</h2>
+                      <p className="text-black mb-4">{post.excerpt}</p>
                       <Link 
                         href={`/blog/${post.slug}`}
                         className="text-blue-800 font-medium hover:text-blue-900 inline-flex items-center"
@@ -58,7 +58,7 @@ export default async function BlogPage() {
             ) : (
               <div className="text-center py-12">
                 <h2 className="text-2xl font-bold mb-4">Coming Soon!</h2>
-                <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+                <p className="text-black mb-8 max-w-2xl mx-auto">
                   We're currently working on creating valuable content to help you navigate distressed property situations.
                   Check back soon for articles, guides, and market updates.
                 </p>
@@ -83,28 +83,28 @@ export default async function BlogPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Foreclosure Prevention</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Learn about strategies to avoid foreclosure, protect your credit, and find alternatives that work for your situation.
                 </p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Short Sale Guidance</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Understand the short sale process, benefits compared to foreclosure, and how to navigate lender negotiations.
                 </p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Sacramento Market Updates</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Stay informed about the latest trends, pricing, and opportunities in the Sacramento County real estate market.
                 </p>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Distressed Property Solutions</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Explore options for selling distressed properties quickly, including cash sales, auction alternatives, and more.
                 </p>
               </div>
@@ -118,12 +118,12 @@ export default async function BlogPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-2xl font-bold mb-4">Stay Updated</h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-black mb-8">
               Subscribe to receive the latest articles, market updates, and expert advice directly to your inbox.
             </p>
             
             <div className="bg-gray-50 p-8 rounded-lg shadow-md">
-              <p className="text-gray-700 mb-6">
+              <p className="text-black mb-6">
                 Our newsletter provides valuable insights for homeowners facing challenging property situations.
               </p>
               
