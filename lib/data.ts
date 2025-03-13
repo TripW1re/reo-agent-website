@@ -1,6 +1,11 @@
 import {
   Service,
+  ContentBlock,
   Location,
+  LocalFeature,
+  BlogPost,
+  BlogCategory,
+  BlogTag,
   ServiceWithLocation
 } from './types';
 
@@ -9,10 +14,11 @@ import {
   mockLocations,
   mockContentBlocks,
   mockLocalFeatures,
-  mockBlogPosts,
   mockBlogCategories,
   mockBlogTags
 } from './mock-data';
+
+import { mockBlogPosts } from './data-blog-posts';
 
 // Data fetching functions using mock data
 export async function getServices(): Promise<Service[]> {
@@ -85,7 +91,7 @@ export async function getLocationBySlug(slug: string): Promise<Location | null> 
   }
 }
 
-export async function getBlogPosts() {
+export async function getBlogPosts(): Promise<BlogPost[]> {
   try {
     // Simulate a delay to mimic a real API call
     await new Promise(resolve => setTimeout(resolve, 100));
@@ -104,7 +110,7 @@ export async function getBlogPosts() {
   }
 }
 
-export async function getBlogPostBySlug(slug: string) {
+export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
     // Simulate a delay to mimic a real API call
     await new Promise(resolve => setTimeout(resolve, 100));
@@ -144,7 +150,7 @@ export async function getServiceLocationPages(): Promise<ServiceWithLocation[]> 
       pages.push({
         service,
         location,
-        meta_title: `${service.title} in ${location.name}, ${location.state} | Fast, Confidential Solutions | eXp Realty`,
+        meta_title: `${service.title} in ${location.name}, ${location.state} | Fast, Confidential Solutions | TurboHomes`,
         meta_description: `Expert ${service.title.toLowerCase()} services in ${location.name}, ${location.state}. Get fast, confidential solutions tailored to your needs. Contact us today.`,
         slug: `${service.slug}/${location.slug}`
       });
