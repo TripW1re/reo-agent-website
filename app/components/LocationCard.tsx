@@ -9,11 +9,11 @@ export default function LocationCard({ location }: LocationCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
       <div className="p-6">
-        <h3 className="text-xl font-bold mb-2 text-gray-900 font-montserrat">{location.name}, {location.state}</h3>
-        <p className="text-gray-600 mb-4 font-roboto">{location.description}</p>
+        <h3 className="text-xl font-bold mb-2 text-gray-900">{location.name}, {location.state}</h3>
+        <p className="text-gray-600 mb-4">{location.description}</p>
         <Link 
           href={`/locations/${location.slug}`}
-          className="text-blue-800 font-medium hover:text-blue-900 inline-flex items-center font-montserrat"
+          className="text-blue-800 font-medium hover:text-blue-900 inline-flex items-center"
         >
           View Services
           <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
