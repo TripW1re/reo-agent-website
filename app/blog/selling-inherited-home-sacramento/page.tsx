@@ -31,7 +31,7 @@ export default function BlogPost() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="prose max-w-none">
+            <div className="prose max-w-none text-black">
               <p>
                 Inheriting a home in Sacramento County can be both a blessing and a challenge. While it may represent a significant financial asset, it also comes with responsibilities and potential complications. This guide will help you navigate the process of selling an inherited property.
               </p>
@@ -172,10 +172,10 @@ export default function BlogPost() {
             </div>
             
             <div className="mt-12 pt-8 border-t border-gray-200">
-              <p className="text-gray-600">
+              <p className="text-black">
                 <strong>Author:</strong> Ravneel Pratap
               </p>
-              <p className="text-gray-600">
+              <p className="text-black">
                 <strong>Published:</strong> March 10, 2025
               </p>
             </div>
@@ -204,7 +204,7 @@ export default function BlogPost() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">5 Ways to Avoid Foreclosure in Sacramento County</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Learn about effective strategies to prevent foreclosure and protect your financial future in Sacramento County.
                 </p>
                 <Link href="/blog/5-ways-to-avoid-foreclosure-sacramento" className="text-blue-800 hover:underline">
@@ -214,7 +214,7 @@ export default function BlogPost() {
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Sacramento Real Estate Market Update: Spring 2025</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Get the latest insights on the Sacramento County real estate market, including trends, pricing, and forecasts for Spring 2025.
                 </p>
                 <Link href="/blog/sacramento-real-estate-market-update-spring-2025" className="text-blue-800 hover:underline">
