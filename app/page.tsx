@@ -20,8 +20,8 @@ export default async function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 font-montserrat">Our Specialized Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-roboto">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">Our Specialized Services</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We offer tailored solutions for homeowners facing challenging situations.
               Our expertise helps you navigate complex real estate scenarios with confidence.
             </p>
@@ -35,7 +35,7 @@ export default async function Home() {
             ) : (
               // Fallback if no services are found in the database
               <div className="col-span-3 text-center py-8">
-                <p className="text-gray-500 font-roboto">Our services are currently being updated. Please check back soon.</p>
+                <p className="text-gray-500">Our services are currently being updated. Please check back soon.</p>
               </div>
             )}
           </div>
@@ -48,8 +48,8 @@ export default async function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900 font-montserrat">Areas We Serve</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto font-roboto">
+            <h2 className="text-3xl font-bold mb-4 text-gray-900">Areas We Serve</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We provide our specialized real estate services throughout Sacramento County
               and surrounding areas, helping distressed homeowners find solutions.
             </p>
@@ -63,7 +63,7 @@ export default async function Home() {
             ) : (
               // Fallback if no locations are found in the database
               <div className="col-span-3 text-center py-8">
-                <p className="text-gray-500 font-roboto">Our service areas are currently being updated. Please check back soon.</p>
+                <p className="text-gray-500">Our service areas are currently being updated. Please check back soon.</p>
               </div>
             )}
           </div>
