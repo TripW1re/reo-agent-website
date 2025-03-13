@@ -35,13 +35,23 @@ export function middleware(request: NextRequest) {
   // Get the user agent from the request headers
   const userAgent = request.headers.get('user-agent') || '';
   
-  // If the request is from a search engine, allow it to access the site
+  // Create a new response
+  const response = NextResponse.next();
+  
+  // Remove any authentication headers that might be causing the 401 error
+  response.headers.delete('WWW-Authenticate');
+  
+  // Add headers to explicitly allow access
+  response.headers.set('Access-Control-Allow-Origin', '*');
+  response.headers.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  
+  // If it's a search engine, add additional headers to ensure it can access the site
   if (isSearchEngine(userAgent)) {
-    return NextResponse.next();
+    response.headers.set('X-Robots-Tag', 'all');
   }
   
-  // For all other requests, proceed normally
-  return NextResponse.next();
+  return response;
 }
 
 // See "Matching Paths" below to learn more
