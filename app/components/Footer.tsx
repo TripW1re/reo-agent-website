@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 font-montserrat">TurboHomes</h3>
-            <p className="text-gray-300 mb-4 font-roboto">
+            <h3 className="text-xl font-bold mb-4">eXp Realty</h3>
+            <p className="text-gray-300 mb-4">
               Specialized real estate services for distressed homeowners in Sacramento County and surrounding areas.
             </p>
             <div className="flex space-x-4">
@@ -33,8 +33,8 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-montserrat">Services</h3>
-            <ul className="space-y-2 font-roboto">
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2">
               <li><Link href="/services/foreclosure-help" className="text-gray-300 hover:text-white">Foreclosure Assistance</Link></li>
               <li><Link href="/services/short-sales" className="text-gray-300 hover:text-white">Short Sales</Link></li>
               <li><Link href="/services/cash-home-sales" className="text-gray-300 hover:text-white">Cash Home Sales</Link></li>
@@ -44,8 +44,8 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-montserrat">Locations</h3>
-            <ul className="space-y-2 font-roboto">
+            <h3 className="text-lg font-semibold mb-4">Locations</h3>
+            <ul className="space-y-2">
               <li><Link href="/locations/elk-grove-ca" className="text-gray-300 hover:text-white">Elk Grove, CA</Link></li>
               <li><Link href="/locations/sacramento-ca" className="text-gray-300 hover:text-white">Sacramento, CA</Link></li>
               <li><Link href="/locations/rancho-cordova-ca" className="text-gray-300 hover:text-white">Rancho Cordova, CA</Link></li>
@@ -55,14 +55,14 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-montserrat">Contact</h3>
-            <p className="text-gray-300 mb-2 font-roboto">📞 Phone: 916-690-3334</p>
-            <p className="text-gray-300 mb-2 font-roboto">📧 Email: ravneel_pratap@live.com</p>
-            <p className="text-gray-300 mb-4 font-roboto">🏢 Office: 2603 Camino Ramon, Suite 200, San Ramon, CA 94583</p>
+            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <p className="text-gray-300 mb-2">📞 Phone: 916-690-3334</p>
+            <p className="text-gray-300 mb-2">📧 Email: ravneel_pratap@live.com</p>
+            <p className="text-gray-300 mb-4">🏢 Office: 2603 Camino Ramon, Suite 200, San Ramon, CA 94583</p>
             <Link 
               href="https://form.jotform.com/250516766708161" 
               target="_blank"
-              className="bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-900 transition-colors inline-block font-montserrat"
+              className="bg-blue-800 text-white px-4 py-2 rounded-md hover:bg-blue-900 transition-colors inline-block"
             >
               Contact Form
             </Link>
@@ -70,8 +70,8 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p className="font-roboto">&copy; {new Date().getFullYear()} TurboHomes. All rights reserved.</p>
-          <p className="mt-2 text-sm font-roboto">
+          <p>&copy; {new Date().getFullYear()} eXp Realty. All rights reserved.</p>
+          <p className="mt-2 text-sm">
             <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link> | 
             <Link href="/terms-of-service" className="hover:text-white ml-2">Terms of Service</Link>
           </p>
