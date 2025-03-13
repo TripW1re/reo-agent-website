@@ -31,7 +31,7 @@ export default function BlogPost() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="prose max-w-none">
+            <div className="prose max-w-none text-black">
               <h2>Current Market Overview</h2>
               <p>
                 Sacramento County's real estate market has shown remarkable resilience despite economic fluctuations. Key indicators for Spring 2025 include:
@@ -140,10 +140,10 @@ export default function BlogPost() {
             </div>
             
             <div className="mt-12 pt-8 border-t border-gray-200">
-              <p className="text-gray-600">
+              <p className="text-black">
                 <strong>Author:</strong> Ravneel Pratap
               </p>
-              <p className="text-gray-600">
+              <p className="text-black">
                 <strong>Published:</strong> March 1, 2025
               </p>
             </div>
@@ -172,7 +172,7 @@ export default function BlogPost() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">5 Ways to Avoid Foreclosure in Sacramento County</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Learn about effective strategies to prevent foreclosure and protect your financial future in Sacramento County.
                 </p>
                 <Link href="/blog/5-ways-to-avoid-foreclosure-sacramento" className="text-blue-800 hover:underline">
@@ -182,7 +182,7 @@ export default function BlogPost() {
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Understanding Short Sales: A Guide for Sacramento Homeowners</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Everything you need to know about short sales in Sacramento County, including benefits, process, and alternatives.
                 </p>
                 <Link href="/blog/understanding-short-sales-sacramento-guide" className="text-blue-800 hover:underline">
