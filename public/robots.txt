@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://turbohomes.vercel.app/sitemap.xml
