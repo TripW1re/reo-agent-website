@@ -23,7 +23,7 @@ export default function TestimonialSection() {
   return (
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">What Our Clients Say</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 font-montserrat">What Our Clients Say</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
@@ -35,11 +35,11 @@ export default function TestimonialSection() {
                 </svg>
               </div>
               
-              <p className="text-gray-600 mb-4">{testimonial.quote}</p>
+              <p className="text-gray-600 mb-4 font-roboto">{testimonial.quote}</p>
               
               <div className="mt-auto">
-                <p className="font-semibold text-gray-900">{testimonial.author}</p>
-                <p className="text-gray-500 text-sm">{testimonial.location}</p>
+                <p className="font-semibold text-gray-900 font-montserrat">{testimonial.author}</p>
+                <p className="text-gray-500 text-sm font-roboto">{testimonial.location}</p>
               </div>
             </div>
           ))}
