@@ -1,14 +1,27 @@
 import type { Metadata } from "next";
-import { Inter } from 'next/font/google';
+import { Inter, Montserrat, Roboto } from 'next/font/google';
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-// Use Google Fonts instead of local fonts
+// Use Google Fonts
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-inter',
+});
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+});
+
+const roboto = Roboto({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto',
 });
 
 export const metadata: Metadata = {
@@ -50,7 +63,7 @@ export default function RootLayout({
       <head>
         <meta name="robots" content="index, follow" />
       </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${montserrat.variable} ${roboto.variable} font-sans antialiased`}>
         <Header />
         <main className="min-h-screen">
           {children}
