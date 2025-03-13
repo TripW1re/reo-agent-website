@@ -31,7 +31,7 @@ export default function BlogPost() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="prose max-w-none">
+            <div className="prose max-w-none text-black">
               <p>
                 Facing foreclosure can be one of the most stressful experiences for any homeowner. The good news is that there are several options available to help you avoid foreclosure and its negative impact on your credit and financial future.
               </p>
@@ -111,10 +111,10 @@ export default function BlogPost() {
             </div>
             
             <div className="mt-12 pt-8 border-t border-gray-200">
-              <p className="text-gray-600">
+              <p className="text-black">
                 <strong>Author:</strong> Ravneel Pratap
               </p>
-              <p className="text-gray-600">
+              <p className="text-black">
                 <strong>Published:</strong> February 15, 2025
               </p>
             </div>
@@ -143,7 +143,7 @@ export default function BlogPost() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Understanding Short Sales: A Guide for Sacramento Homeowners</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Everything you need to know about short sales in Sacramento County, including benefits, process, and alternatives.
                 </p>
                 <Link href="/blog/understanding-short-sales-sacramento-guide" className="text-blue-800 hover:underline">
@@ -153,7 +153,7 @@ export default function BlogPost() {
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-lg font-semibold mb-3">Sacramento Real Estate Market Update: Spring 2025</h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-black mb-4">
                   Get the latest insights on the Sacramento County real estate market, including trends, pricing, and forecasts for Spring 2025.
                 </p>
                 <Link href="/blog/sacramento-real-estate-market-update-spring-2025" className="text-blue-800 hover:underline">
